@@ -1,0 +1,17 @@
+<h1>THIS IS THE STUDENT EDIT PAGE</h1>
+
+<%= form_for @student do |f| %>
+  <ul>
+     <li>
+     <%= f.label 'Student First Name'%>
+     <%= f.text_field :first_name %>
+     </li>
+     <li>
+     <%= f.label 'Student Last Name'%>
+     <%= f.text_field :last_name %>
+     </li>
+     <li>
+     <%= f.submit %>
+     </li>
+  </ul>
+<% end %>

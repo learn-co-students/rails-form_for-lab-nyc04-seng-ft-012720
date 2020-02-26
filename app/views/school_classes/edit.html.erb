@@ -1,0 +1,17 @@
+<h1>THIS IS THE SCHOOL CLASS EDIT PAGE</h1>
+
+<%= form_for @school_class do |f| %>
+  <ul>
+     <li>
+     <%= f.label 'School Class Title'%>
+     <%= f.text_field :title %>
+     </li>
+     <li>
+     <%= f.label 'School Class Room'%>
+     <%= f.number_field :room_number %>
+     </li>
+     <li>
+     <%= f.submit %>
+     </li>
+  </ul>
+<% end %>
